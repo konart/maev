@@ -1,0 +1,9 @@
+providers:
+  openai_compat:
+    baseUrl: ""
+    api: openai-completions
+    apiKey: ${ENV_VAR} # literal key or ${ENV_VAR}; omp [Secrets*] placeholders NOT supported
+    auth: apiKey
+    models:
+      - id: "smth/model"
+        name: "smth/model"
